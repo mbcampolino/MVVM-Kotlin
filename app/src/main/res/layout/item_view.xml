@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".presentation.MainActivity">
+
+    <data>
+        <variable
+                name="pizza"
+                type="com.marcos.mvvmkotlin.model.Pizza" />
+
+    </data>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{pizza.name}"
+            android:id="@+id/textView"
+            android:padding="@dimen/size16"/>
+
+</layout>
